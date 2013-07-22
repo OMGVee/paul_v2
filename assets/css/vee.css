@@ -1,139 +1,215 @@
 body {
-background-image: url('../ui/bg.gif');
-background-attachment: fixed;
-color: #555;
-padding: 0;
-margin: 0;
-font-family: 'Fauna One'; //this is loaded from google fonts
+	background-image: url('../ui/bg.gif');
+	background-attachment: fixed;
+	color: #555;
+	padding: 0;
+	margin: 0;
+	font-family: 'Fauna One'; /* this gets loaded from google fonts via my fonts.js */
 }
 
-#header {
-position: fixed;
-top: 0;
-width: 100%;
-color: #fff;
-height: 40px;
-text-align: center;
-text-transform: capitalize;
-padding-top: 15px;
-/* Adds shadow to the bottom of the bar */
--webkit-box-shadow: 0px 0px 8px 0px #000000;
--moz-box-shadow: 0px 0px 8px 0px #000000;
-box-shadow: 0px 0px 8px 0px #000000;
-/* Adds the transparent background */
-background-color: rgba(1, 1, 1, 0.8);
-color: rgba(1, 1, 1, 0.8);
+span {
+  display: inline-block;
+  vertical-align: middle;
 }
-
-#fblink {
-	display: block;
-	background-repeat: no-repeat;
-	margin-right:5px;
-	margin-top: -32px;
-	background-image: url('../ui/icons/active/Facebook.png');
-	width: 56px;
-	height: 56px;
-}
-#fblink:hover {
-	background-image: url('../ui/icons/hover/Facebook.png');
-}
-
-#twlink {
-	display: block;
-	background-repeat: no-repeat;
-	margin-right:5px;
-	margin-top: -32px;
-	background-image: url('../ui/icons/active/Twitter.png');
-	width: 56px;
-	height: 56px;
-}
-#twlink:hover {
-	background-image: url('../ui/icons/hover/Twitter.png');
-}
-
-#rsslink {
-	display: block;
-	background-repeat: no-repeat;
-	margin-right:5px;
-	margin-top: -32px;
-	background-image: url('../ui/icons/active/RSS.png');
-	width: 56px;
-	height: 56px;
-}
-#rsslink:hover {
-	background-image: url('../ui/icons/hover/RSS.png');
-}
-
 
 a {
 	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: #149ad4;
 }
 
-li {
-	float: left;
-	list-style: none;
+/* visual debugging ffs, set to 1 to see what's what when mousing over :| I know, it sucks, but beats using fucking dreamweaver and getting shit wrong anyway :) */
+div:hover {
+	border: 0px dashed red;
 }
+
+h1 {
+	color: #149ad4;
+	text-align: center;
+}
+h1::selection {
+	background-color: #149ad4;
+	color: white;
+}
+h1::-moz-selection {
+	background-color: #149ad4;
+	color: white;
+}
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	height: 55px;
+	text-align: center;
+	/* Adds shadow to the bottom of the bar */
+	box-shadow: 0px 0px 8px 0px #000000;
+	/* Adds the transparent background */
+	background-color: rgba(1, 1, 1, 0.9);
+	color: rgba(1, 1, 1, 0.8);
+}
+
 
 #logo {
 	float: left;
-	width: 30%;
-	// must fit in 52px high space
+	width: 20%;
+	text-align: right;
+	max-height: 52px;
+	min-height: 52px;
+	color: #149ad4;
+	margin-top: 6px;
+
+}
+	/* must fit in 52px high space */
+}
+#logo:hover {
+	color: white;
 }
 
 #navigation {
-	width: 40%;
+	width: 60%;
+	height: 52px;
 	float: left;
+	line-height: 52px;
+	text-align: center;
 }
 
-#socialize {
-	width: 30%;
-	float: left;
-	text-align: right;
-	vertical-align: middle;
-}
 #navigation a {
-font-size: 14px;
-padding-left: 15px;
-padding-right: 15px;
-color: white;
-text-decoration: none;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: white;
+	text-decoration: none;
 }
 
 #navigation a:hover {
 color: #149ad4;
 } 
 
-#content {
-font-family: 'Fauna One', 'TrebuchetMS', monospace;
-font-size: 2em;
-line-height: 1.5em;
-margin: auto;
-width: 80%;
-text-shadow: 0px 1px 1px #fff;
-margin-top: 60px;
-margin-bottom: 35px;
-min-width: 50%
+/* them round social media icons that won't show the same on fucking internet exploder.. FML */
+#socialize {
+	right:0;
+	width: 20%;
+	max-height: 52px;
+	height: 52px;
+	max-height: 52px;
+	float: right;
+	text-align: center;
 }
 
-::selection { /*because I'm a sucker for orange, bitchez :D*/
-background-color: orange;
-color: #fff;
+#socialize a {
+	display: block;
+	float: left;
+	text-align: right;
+	margin-top: -1px;
+}
+#fblink {
+	margin0px;
+	background-repeat: no-repeat;
+	background-image: url('../ui/icons/active/Facebook.png');
+	width: 56px;
+	height: 56px;
+	vertical-align: top;
+	text-align: right;
+}
+#fblink:hover {
+	background-image: url('../ui/icons/hover/Facebook.png');
+}
+
+#twlink {
+	background-repeat: no-repeat;
+	background-image: url('../ui/icons/active/Twitter.png');
+	width: 56px;
+	height: 56px;
+	vertical-align: top;
+	text-align: right;
+}
+#twlink:hover {
+	background-image: url('../ui/icons/hover/Twitter.png');
+}
+
+#rsslink {
+	background-repeat: no-repeat;
+	background-image: url('../ui/icons/active/RSS.png');
+	width: 56px;
+	height: 56px;
+	vertical-align: top;
+	text-align: right;
+}
+#rsslink:hover {
+	background-image: url('../ui/icons/hover/RSS.png');
+}
+
+/* obviously, the main page content, be it text or the gallery or paul's contact form or whatever */
+#content {
+	font-family: 'Fauna One', 'TrebuchetMS', monospace;
+	font-size: 24px;
+	line-height: 1.5em;
+	margin: auto;
+	width: 80%;
+	text-shadow: 0px 1px 1px #fff;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	min-width: 50%
+}
+
+#bigredbutton {
+	width: 30%;
+	min-width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+	text-align: center;
+	box-shadow: 1px 1px 1px rgba(1,1,1,0.8);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#bigredbutton:hover{
+	color: yellow;
+}
+
+#getintouch {
+	font-style: italic;
+}
+
+#phone {
+	//font-family: 'Tahoma';
+}
+
+
+::selection { /* because I'm a sucker for orange, bitchez :D */
+	background-color: orange;
+	color: #fff;
+} 
+::-moz-selection {
+	background-color: orange;
+	color: #fff;
 }
 
 #footer {
-position: fixed;
-bottom: 0;
-width: 100%;
-color: white;
-height: 20px;
-text-align: center;
-/* Adds shadow to the bottom of the bar */
--webkit-box-shadow: 0px 0px 8px 0px #000000;
--moz-box-shadow: 0px 0px 8px 0px #000000;
-box-shadow: 0px 0px 8px 0px #000000;
-/* Adds the transparent background */
-background-color: rgba(1, 1, 1, 0.9);
-color: rgba(1, 1, 1, 0.8);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	height: 20px;
+	text-align: center;
+	/* Adds shadow to the bottom of the bar */
+	box-shadow: 0px 0px 8px 0px #000000;
+	/* Adds the transparent background */
+	background-color: rgba(1, 1, 1, 0.9);
+	color: rgba(1, 1, 1, 0.8);
+
+}
+
+#footer {
+	color: gray;
+}
+
+#footer:hover {
+	color:#149ad4;
 }
 
 #footer a {
@@ -144,13 +220,27 @@ color: rgba(1, 1, 1, 0.8);
 	color:#149ad4;
 }
 
-
-/* shadow shit - normal sane browsers
--moz-box-shadow: 3px 3px 4px #000;
--webkit-box-shadow: 3px 3px 4px #000;
-box-shadow: 3px 3px 4px #000;
--ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
-*/
+#footer_left {
+	float: left;
 }
+#footer_right {
+	float: right;
+}
+
+#ro:hover {
+	color:orange;
+}
+
+#contact_link {
+	color: orange;
+}
+#contact_link:hover {
+	color: #149ad4;
+}
+
+/* gallery style and spacing and all that crap */
+
+
+
+
 
