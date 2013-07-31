@@ -4,7 +4,7 @@ body {
 	color: #555;
 	padding: 0;
 	margin: 0;
-	font-family: 'Fauna One'; /* this gets loaded from google fonts via my fonts.js */
+	font-family: Arial, 'Fauna One'; /* this gets loaded from google fonts via my fonts.js */
 }
 
 span {
