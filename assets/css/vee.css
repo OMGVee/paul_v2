@@ -147,7 +147,8 @@ color: #149ad4;
 #content {
 	font-family: Arial, Helvetica, sans-serif, 'Fauna One', 'TrebuchetMS', monospace;
 	font-size: 21px;
-	line-height: 1.7em;
+	line-height: 1.5em;
+	text-align: justify;
 	margin: auto;
 	width: 80%;
 	text-shadow: 0px 1px 1px #fff;
