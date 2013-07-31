@@ -28,6 +28,7 @@ div:hover {
 h1 {
 	color: #149ad4;
 	text-align: center;
+	line-height: 1.7em;
 }
 h1::selection {
 	background-color: #149ad4;
