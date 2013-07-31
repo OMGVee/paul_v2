@@ -4,8 +4,7 @@ body {
 	color: #555;
 	padding: 0;
 	margin: 0;
-	/* font-family: Arial, 'Fauna One'; /* this gets loaded from google fonts via my fonts.js */
-	font-family: "Arial, Helvetica, sans-serif";
+	font-family: 'Fauna One'; /* this gets loaded from google fonts via my fonts.js */
 }
 
 span {
@@ -145,8 +144,8 @@ color: #149ad4;
 
 /* obviously, the main page content, be it text or the gallery or paul's contact form or whatever */
 #content {
-	font-family: Arial, Helvetica, sans-serif, 'Fauna One', 'TrebuchetMS', monospace;
-	font-size: 21px;
+	font-family: 'Fauna One', 'TrebuchetMS', monospace;
+	font-size: 22px;
 	line-height: 1.5em;
 	text-align: justify;
 	margin: auto;
